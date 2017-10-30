@@ -10,14 +10,34 @@ using System.Windows.Forms;
 
 namespace tailor_software
 {
-    public partial class Login : Form
+    public partial class LoginForm : Form
     {
-        public Login()
+        public LoginForm()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void forgotPasswordLink_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void resetPasswordLink_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
         {
 
         }
