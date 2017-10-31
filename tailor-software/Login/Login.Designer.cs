@@ -1,4 +1,4 @@
-﻿namespace tailor_software
+﻿namespace tailor_software.Login
 {
     partial class LoginForm
     {
@@ -58,6 +58,7 @@
             this.loginHeaderLabel.Size = new System.Drawing.Size(360, 22);
             this.loginHeaderLabel.TabIndex = 0;
             this.loginHeaderLabel.Text = "Login";
+            this.loginHeaderLabel.Click += new System.EventHandler(this.loginHeaderLabel_Click);
             // 
             // forgotPasswordLink
             // 

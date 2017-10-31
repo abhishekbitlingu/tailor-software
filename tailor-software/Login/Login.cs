@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace tailor_software
+namespace tailor_software.Login
 {
     public partial class LoginForm : Form
     {
@@ -56,6 +56,11 @@ namespace tailor_software
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginHeaderLabel_Click(object sender, EventArgs e)
         {
 
         }
