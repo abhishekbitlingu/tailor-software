@@ -9,13 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace tailor_software.Login
+namespace tailor_software.MainScreen
 {
-    public partial class LoginForm : Form
+    public partial class Main : Form
     {
-        public LoginForm()
+        public Main()
         {
             InitializeComponent();
+        }
+
+        private void MainContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void loginButton_Click(object sender, EventArgs e)
@@ -40,27 +45,12 @@ namespace tailor_software.Login
             con.Close();
         }
 
-        private void forgotPasswordLink_Click(object sender, EventArgs e)
+        private void resetPasswordLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
 
-        private void resetPasswordLink_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userNameTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void loginHeaderLabel_Click(object sender, EventArgs e)
+        private void forgotPasswordLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
