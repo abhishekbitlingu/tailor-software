@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace tailor_software.UserControls
 {
-    public partial class HomeControl : UserControl
+    public partial class MainUserControl : UserControl
     {
-        public HomeControl()
+        public MainUserControl()
         {
             InitializeComponent();
-        }
-
-        private void HomeControl_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

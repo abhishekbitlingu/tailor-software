@@ -65,6 +65,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="dbDataSetMain.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSetMain.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainScreen\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +84,11 @@
     <Compile Include="UserControls\HomeControl.Designer.cs">
       <DependentUpon>HomeControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LoginUserControl.cs">
+    <Compile Include="UserControls\MainUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\LoginUserControl.Designer.cs">
-      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    <Compile Include="UserControls\MainUserControl.Designer.cs">
+      <DependentUpon>MainUserControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainScreen\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -100,8 +105,8 @@
     <EmbeddedResource Include="UserControls\HomeControl.resx">
       <DependentUpon>HomeControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\LoginUserControl.resx">
-      <DependentUpon>LoginUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\MainUserControl.resx">
+      <DependentUpon>MainUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="dbDataSet.xsc">
       <DependentUpon>dbDataSet.xsd</DependentUpon>
@@ -113,6 +118,17 @@
     </None>
     <None Include="dbDataSet.xss">
       <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSetMain.xsc">
+      <DependentUpon>dbDataSetMain.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSetMain.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSetMain.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSetMain.xss">
+      <DependentUpon>dbDataSetMain.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

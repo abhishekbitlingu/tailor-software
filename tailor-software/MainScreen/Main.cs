@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tailor_software.UserControls;
 
 namespace tailor_software.MainScreen
 {
@@ -36,7 +37,7 @@ namespace tailor_software.MainScreen
             dataAdapter.Fill(dataTable);
             if (dataTable.Rows.Count > 0)
             {
-                MessageBox.Show("Login sucess Welcome to Homepage ");
+                replaceUserControl(new MainUserControl());
             }
             else
             {
@@ -48,6 +49,13 @@ namespace tailor_software.MainScreen
         private void resetPasswordLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        public void replaceUserControl (UserControl userControl)
+        {
+            mainContainer.Controls.Clear();
+            GC.Collect();
+            mainContainer.Controls.Add(userControl);
         }
 
         private void forgotPasswordLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
